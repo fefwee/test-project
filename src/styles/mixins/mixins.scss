@@ -1,0 +1,38 @@
+@import "../variable/variable";
+
+@mixin button-styles {
+  background-color: $default-blue-color;
+  color: $color-white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $hover-blue-color;
+  }
+
+
+  &:disabled {
+    background-color: $default-grey-color;
+    color: $black-color;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: not-allowed;
+  }
+}
+
+@mixin container-styles {
+  max-width: 1800px;
+  margin: 0 auto;
+}

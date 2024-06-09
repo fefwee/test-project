@@ -1,0 +1,37 @@
+@import "../../../styles/variable/variable";
+
+.form {
+  min-width: 445px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.castom-input {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 10px;
+    width: 25px;
+    height: 25px;
+    background: url('../../../../public/images/Property_search=Default.png') no-repeat;
+    background-size: cover;
+  }
+
+  input {
+    width: 100%;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid $default-grey-color;
+  }
+
+  &:hover:before {
+    background: url('../../../../public/images/Property_search=Variant3.png') no-repeat;
+    background-size: cover;
+  }
+}

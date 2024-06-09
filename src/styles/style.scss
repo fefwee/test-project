@@ -1,0 +1,50 @@
+@import "./mixins/mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 14px;
+
+}
+
+image {
+  max-width: 100%;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.container {
+  @include container-styles;
+}
+
+@media screen and (max-width: 1800px) {
+  .container {
+    margin: 0 30px;
+  }
+}

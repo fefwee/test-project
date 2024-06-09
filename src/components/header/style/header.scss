@@ -1,0 +1,48 @@
+
+header {
+  padding: 20px 0;
+
+  span {
+    font-weight: bold;
+
+    &:nth-child(1) {
+      margin-right: 20px;
+    }
+  }
+
+  .header_container_favorite_box {
+    display: flex;
+    align-items: center;
+
+    div {
+      margin-right: 20px;
+    }
+  }
+
+  .header_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 126px;
+    align-items: center;
+
+    .header_container_logo {
+      display: flex;
+      align-items: center;
+
+      img {
+        max-width: 134px;
+        margin-right: 20px;
+      }
+
+    }
+
+    .header_container_favorite {
+      width: 27px;
+      height: 27px;
+      background-image: url("../../../../public/images/Property 1=Hover.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
